@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Fuente Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="margin:0; padding:0; font-family:'Poppins', sans-serif; background:#f5f5f5;">
+
+    <table style="max-width:600px; margin:auto; background:white; padding:0; border-radius:14px; overflow:hidden; border:1px solid #eee;">
+      
+      <!-- Header con color institucional -->
+      <tr>
+        <td style="background:#1c97af91; padding:25px; text-align:center;">
+          <img src="https://drive.google.com/uc?export=view&id=1-6cRLJkgALqWcwmFx0NFlHomNT0wOW_Z" />
+        </td>
+      </tr>
+
+      <!-- Contenido principal -->
+      <tr>
+        <td style="padding:30px; color:#333; font-size:15px; line-height:1.6;">
+          
+          <p style="margin-top:0;">
+            Hola <strong style="color:#cc5e50;"><?= nombreFuncionario ?></strong>,
+          </p>
+
+          <p>
+            Mi nombre es <strong><?= nombreNino ?></strong>. Soy 
+            <strong><?= sexo == "F" ? "una niña" : "un niño" ?></strong> 
+            de <strong><?= edad ?></strong> años y vivo en la comunidad
+            <strong><?= comunidad ?></strong>.
+          </p>
+
+          <p>
+            Mi deseo es que todos los niños podamos disfrutar una Navidad
+            llena de juegos y muchos regalos.
+          </p>
+
+          <p style="color:#cc5e50; font-weight:600; font-size:16px;">
+            ¡Hoy te invito a donar un regalo y construir una sonrisa!
+          </p>
+
+          <div style="margin-top:25px; padding:15px; background:#e2a54222; border-left:5px solid #e2a542; border-radius:6px;">
+            <strong style="color:#e2a542;">Fecha límite:</strong> <?= fechaLimite ?><br>
+            <strong style="color:#e2a542;">Lugar de entrega:</strong> <?= lugarEntrega ?>
+          </div>
+
+        </td>
+      </tr>
+
+      <!-- Imagen decorativa -->
+      <tr>
+        <td style="text-align:center; padding:20px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGF_JljH3aiVaQjdFlN_4Rqgmq6VgZLO-zg&s" style="width:220px;">
+        </td>
+      </tr>
+
+      <!-- Footer institucional -->
+      <tr>
+        <td style="background:#cc5e50; padding:18px; text-align:center; color:white; font-size:12px;">
+          Universidad de La Guajira – Campaña Institucional 2025
+        </td>
+      </tr>
+
+    </table>
+
+  </body>
+</html>
